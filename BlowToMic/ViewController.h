@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BlowIntoMicMeter.h"
 
 @interface ViewController : UIViewController
+{
+    BlowIntoMicMeter *micMeter;
+}
 
 @end

@@ -21,6 +21,9 @@
 		950EC81F17EC0F2100FC07CE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 950EC80117EC0F2000FC07CE /* UIKit.framework */; };
 		950EC82717EC0F2100FC07CE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 950EC82517EC0F2100FC07CE /* InfoPlist.strings */; };
 		950EC82917EC0F2100FC07CE /* BlowToMicTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 950EC82817EC0F2100FC07CE /* BlowToMicTests.m */; };
+		950EC83317EC0F6D00FC07CE /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 950EC83217EC0F6D00FC07CE /* AVFoundation.framework */; };
+		950EC83517EC0F7E00FC07CE /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 950EC83417EC0F7E00FC07CE /* CoreAudio.framework */; };
+		950EC83817EC233000FC07CE /* BlowIntoMicMeter.m in Sources */ = {isa = PBXBuildFile; fileRef = 950EC83717EC233000FC07CE /* BlowIntoMicMeter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,10 @@
 		950EC82417EC0F2100FC07CE /* BlowToMicTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BlowToMicTests-Info.plist"; sourceTree = "<group>"; };
 		950EC82617EC0F2100FC07CE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		950EC82817EC0F2100FC07CE /* BlowToMicTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlowToMicTests.m; sourceTree = "<group>"; };
+		950EC83217EC0F6D00FC07CE /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		950EC83417EC0F7E00FC07CE /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		950EC83617EC233000FC07CE /* BlowIntoMicMeter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlowIntoMicMeter.h; sourceTree = "<group>"; };
+		950EC83717EC233000FC07CE /* BlowIntoMicMeter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlowIntoMicMeter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +67,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				950EC83517EC0F7E00FC07CE /* CoreAudio.framework in Frameworks */,
+				950EC83317EC0F6D00FC07CE /* AVFoundation.framework in Frameworks */,
 				950EC80017EC0F2000FC07CE /* CoreGraphics.framework in Frameworks */,
 				950EC80217EC0F2000FC07CE /* UIKit.framework in Frameworks */,
 				950EC7FE17EC0F2000FC07CE /* Foundation.framework in Frameworks */,
@@ -82,6 +91,8 @@
 		950EC7F117EC0F2000FC07CE = {
 			isa = PBXGroup;
 			children = (
+				950EC83617EC233000FC07CE /* BlowIntoMicMeter.h */,
+				950EC83717EC233000FC07CE /* BlowIntoMicMeter.m */,
 				950EC80317EC0F2000FC07CE /* BlowToMic */,
 				950EC82217EC0F2100FC07CE /* BlowToMicTests */,
 				950EC7FC17EC0F2000FC07CE /* Frameworks */,
@@ -101,6 +112,8 @@
 		950EC7FC17EC0F2000FC07CE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				950EC83417EC0F7E00FC07CE /* CoreAudio.framework */,
+				950EC83217EC0F6D00FC07CE /* AVFoundation.framework */,
 				950EC7FD17EC0F2000FC07CE /* Foundation.framework */,
 				950EC7FF17EC0F2000FC07CE /* CoreGraphics.framework */,
 				950EC80117EC0F2000FC07CE /* UIKit.framework */,
@@ -250,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				950EC81417EC0F2000FC07CE /* ViewController.m in Sources */,
+				950EC83817EC233000FC07CE /* BlowIntoMicMeter.m in Sources */,
 				950EC80E17EC0F2000FC07CE /* AppDelegate.m in Sources */,
 				950EC80A17EC0F2000FC07CE /* main.m in Sources */,
 			);

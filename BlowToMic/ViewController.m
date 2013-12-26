@@ -18,6 +18,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    micMeter = [[BlowIntoMicMeter alloc] initWithFrame:CGRectMake(16, 38 + 66, 320 - 32, 66)];
+    [self.view addSubview:micMeter];
 }
 
 - (void)didReceiveMemoryWarning
